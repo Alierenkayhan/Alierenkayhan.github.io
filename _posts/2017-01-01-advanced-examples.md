@@ -1,11 +1,11 @@
 ---
-title:  "Advanced examples"
+title:  "Creating University Networking System In Cisco Packet Tracer"
 mathjax: true
 layout: post
-categories: media
+categories: Networking system,Cisco Packet Tracer,
 ---
 
-Creating University Networking System In Cisco Packet Tracer
+ 
 
 
 
