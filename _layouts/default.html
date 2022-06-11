@@ -27,17 +27,18 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
-<header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
-  {% include menu.html menu=pages %}
-</header>
-
+  
 {{ content }}
 
 {% if site.external %}
 <footer>
-  <div>{{ site.description | default: site.title }}</div>
-  {% include menu.html menu=site.external %}
+ <!-- footer -->
+                     
+ <!-- copyright -->
+<div>© 2022 Ali Eren Kayhan</div>
+ <!-- author ( Please! Do not delete it. You are awesome! :) -->
+<div>Template author:&#160; <a href="https://themeforest.net/user/millerdigitaldesign" target="_blank">Nazar Miller</a></div>
+                    
 </footer>
 {% endif %}
 
