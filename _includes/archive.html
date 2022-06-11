@@ -1,59 +1,6 @@
----
-layout: default
----
-article>
-  
- 
- 
- <!-- container -->
-                  <div class="container-fluid">
-
-                      <!-- row -->
-                      <div class="row">
-
-                          <!-- col -->
-                          <div class="col-lg-12">
-
-                              <!-- section title -->
-                              <div class="art-section-title">
-                                  <!-- title frame -->
-                                  <div class="art-title-frame">
-                                      <!-- title -->
-                                      <h4>Blogs</h4>
-                                  </div>
-                                  <!-- title frame end -->
-                              </div>
-                              <!-- section title end -->
-
-                          </div>
-                          <!-- col end -->
-                          <!-- col -->
-                          <div class="col-lg-12">
-
-                              <!-- slider container -->
-                              <div class="swiper-container art-blog-slider" style="overflow: visible">
-                                  <!-- slider wrapper -->
-                                  <div class="swiper-wrapper">
-                                      <!-- slide -->
-                                      <div class="swiper-slide">
-
-                                          <!-- blog post card -->
-                                          <div class="art-a art-blog-card">
-                                              <!-- post cover -->
-                                              <a href="#." class="art-port-cover">
-                                                  <!-- img -->
-                                                  <img src="img/blog/1.jpg" alt="blog post">
-                                              </a>
-                                              <!-- post cover end -->
-                                              <!-- post description -->
-                                              <div class="art-post-description">
-                                                  <!-- title -->
-                                                  <a href="#.">
-                                                      <h5 class="mb-15"> <header><h1>{{ include.title | default: page.title }}</h1></header></h5>
-                                                  </a>
-                                                  <!-- text -->
-                                                  <div class="mb-15">  
-                                                 <ul class="archive">
+<article>
+  <header><h1>{{ include.title | default: page.title }}</h1></header>
+  <ul class="archive">
     {% for post in site.posts %}
     <li>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
@@ -61,30 +8,4 @@ article>
     </li>
     {% endfor %}
   </ul>
-                                                </div>
-                                                  <!-- link -->
-                                                  <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
-                                              </div>
-                                              <!-- post description end -->
-                                          </div>
-                                          <!-- blog post card end -->
-
-                                      </div>
-                                      <!-- slide end -->
-                                     
-                                  </div>
-                                  <!-- slider wrapper end -->
-                              </div>
-                              <!-- slider container end -->
-
-
-
-
-                          </div>
-                          <!-- col end -->
-                      </div>
-                      <!-- row end -->
-
-                  </div>
-                  <!-- container end -->
 </article>
