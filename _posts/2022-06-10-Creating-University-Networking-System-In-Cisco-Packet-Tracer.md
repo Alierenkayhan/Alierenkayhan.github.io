@@ -7,25 +7,21 @@ categories:
  -Cisco Packet Tracer
 ---
 
- 
+   Hello, today I and my friends tell you how to create a networking system in Cisco Packet Tracer. This is our CET 314 homework and this is a group project. Our group's name is Cetgiller.
 
-
-
-    Hello, today I and my friends tell you how to create a networking system in Cisco Packet Tracer. This is our CET 314 homework and this is a group project. Our group's name is Cetgiller.
-
-    Before reading the article;
-    It is assumed that you know Cisco Packet Tracer.
+   Before reading the article;
+   It is assumed that you know Cisco Packet Tracer.
 Part 1- General Information About The System
 
-    Group member;
-    Ali Eren Kayhan
-    Bengisu Kaya
-    Ege Eroğlu
-    Enes Sucu
-    Numan Kaya
+   Group member;
+   Ali Eren Kayhan
+   Bengisu Kaya
+   Ege Eroğlu
+   Enes Sucu
+   Numan Kaya
 
 
-    First, you need to know what the system must have, and what you have
+   First, you need to know what the system must have, and what you have
 Company Name: Gezi school’s campuses
 The number of campus: 4
 The number of students: 1150
@@ -46,9 +42,9 @@ Every campus and buildings have the same network speed.
 
 
 
-    Moreover, you should clarify your plan.
+   Moreover, you should clarify your plan.
 
-    1. Business Objectives 
+   1. Business Objectives 
 
 
 a. What does the company do? 
@@ -63,7 +59,7 @@ c. What divisions/departments would be impacted by the network?
 
 Every department and division would be positively impacted by the network, especially if they deal with computers.
 
-    2. Future Growth 
+   2. Future Growth 
 
 a. What is the projected growth of the company?
 
@@ -77,11 +73,11 @@ c. Where does the company see itself in one year? Five years?
 
 In one year, the school should be in the top fifty schools in ranking. In five years, the school should be in the top twenty schools in ranking.
 
-    3. User/Group Requirements
+   3. User/Group Requirements
 
-               a. How will the network impact and improve user performance?
+      a. How will the network impact and improve user performance?
 
-               Users have access to a limitless source, the internet. Therefore, they can use this limitless source to improve themselves.
+       Users have access to a limitless source, the internet. Therefore, they can use this limitless source to improve themselves.
 
 b. How will the network allow users to grow within their current roles?
 
@@ -91,19 +87,18 @@ c. What type and amount of resources must be available to each group?
 
 They should have equal access to the internet.
 
-    4. Security
+   4. Security
 
-               a. What are the levels of security within the company?
+      a. What are the levels of security within the company?
+    
+      There should be 4 security levels. Like this;
 
-               There should be 4 security levels. Like this;
 
 
+      For P1, everyone in the campus has access. For P2, not everyone can have access. Only students, teachers and workers, IT team members, have access. For P3, teachers and workers have access. For P4, only workers have access.
 
-For P1, everyone in the campus has access. For P2, not everyone can have access. Only students, teachers and workers, IT team members, have access. For P3, teachers and workers have access. For P4, only workers have access.
-
-               b. Are there different levels of security when dealing with outside sources?
-
-               Yes. The security should be like this;
+      b. Are there different levels of security when dealing with outside sources?
+      Yes. The security should be like this;
 
 
 
