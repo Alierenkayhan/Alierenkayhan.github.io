@@ -1,60 +1,55 @@
-{%- assign posts = paginator.posts | default: site.posts -%}
-<!-- container -->
-                  <div class="container-fluid">
+{%- assign posts = paginator.posts | default: site.posts -%}           
 {% for post in posts %}
  <article>
  
-                      <!-- row -->
-                      <div class="row">
-                          <!-- col -->
-                          <div class="col-lg-12">
+   
+   <div class="col-lg-12">
+
+    <!-- slider container -->
+    <div class="swiper-container art-blog-slider" style="overflow: visible">
+      <!-- slider wrapper -->
+      <div class="swiper-wrapper">
 
 
-                            
-                              <!-- slider container -->
-                              <div class="swiper-container art-blog-slider" style="overflow: visible">
-                                  <!-- slider wrapper -->
-                                  <div class="swiper-wrapper">
-                                      <!-- slide -->
-                                      <div class="swiper-slide">
-                                          <!-- blog post card -->
-                                          <div class="art-a art-blog-card">
-                                              <!-- post cover -->
-                                              <a href="#." class="art-port-cover">
-                                                  <!-- img -->
-                                                  <img src="img/blog/1.jpg" alt="blog post">
-                                              </a>
-                                              <!-- post cover end -->
-                                              <!-- post description -->
-                                              <div class="art-post-description">
-                                                  <!-- title -->
-                                                  <a href="#.">
-                                                      <p class="mb-15">{% include meta.html post=post preview=true %}</p>
-                                                  </a>
-                                                  <!-- text -->
-                                                  <div class="mb-15">{{ post.excerpt }} </div>
-                                                                                              </div>
-                                              <!-- post description end -->
-                                          </div>
-                                          <!-- blog post card end -->
-                                      </div>
-                                      <!-- slide end -->
-                                     
-                                  </div>
-                                  <!-- slider wrapper end -->
-                              </div>
-                              <!-- slider container end -->
+        <!-- slide -->
+        <div class="swiper-slide">
 
+          <!-- blog post card -->
+          <div class="art-a art-blog-card">
+            <!-- post cover -->
+            <a href="#." class="art-port-cover">
+              <!-- img -->
+              <img src="img/blog/1.jpg" alt="blog post">
+            </a>
+            <!-- post cover end -->
+            <!-- post description -->
+            <div class="art-post-description">
+              <!-- title -->
+              <a href="#.">
+                <p class="mb-15">{% include meta.html post=post preview=true %}</p>
+              </a>
+              <!-- text -->
+              <div class="mb-15">{{ post.excerpt }} </div>
+              <!-- link -->
+              <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+            </div>
+            <!-- post description end -->
+          </div>
+          <!-- blog post card end -->
 
+        </div>
+        <!-- slide end -->
+        
+      </div>
+      <!-- slider wrapper end -->
+    </div>
+    <!-- slider container end -->
 
-                          </div>
-                          <!-- col end -->
-                        </div>
-                  
+  </div>
+  <!-- col end -->
                       
  </article>
 {% endfor %}
-         </div>                   
 
 {% if paginator.total_pages > 1 %}
   <footer>
