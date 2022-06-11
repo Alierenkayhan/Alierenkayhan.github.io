@@ -1,5 +1,5 @@
 {%- assign posts = paginator.posts | default: site.posts -%}           
-{% for post in posts %}
+ 
     <!-- container -->
 <div class="container-fluid">
 <div class="row">
@@ -10,7 +10,7 @@
     <div class="swiper-container art-blog-slider" style="overflow: visible">
       <!-- slider wrapper -->
       <div class="swiper-wrapper">
-
+{% for post in posts %}
 
  <article>
  
@@ -50,6 +50,7 @@
 
                       
  </article>
+          {% endfor %}
           </div>
       <!-- slider wrapper end -->
     </div>
@@ -63,7 +64,7 @@
 
 </div>
 <!-- container end -->
-{% endfor %}
+
 
 {% if paginator.total_pages > 1 %}
   <footer>
