@@ -4,7 +4,7 @@ layout: default
 <article>
   {% include meta.html post=page %}
 
-<body>
+ 
   <!-- app -->
   <div class="art-app">
 
@@ -578,7 +578,11 @@ layout: default
   <!-- main js -->
   <script src="js/main.js"></script>
 
-</body>
-   
+ 
+   {% if page.comments != false and site.comments.isso or site.comments.disqus %}
+    <hr>
+    {% if site.comments.isso_domain %}<div id="isso-thread"></div>{% endif %}
+    {% if site.comments.disqus_shortname %}<div id="disqus_thread"></div>{% endif %}
+    <noscript>Please enable JavaScript to view comments.</noscript> 
   {% endif %}
 </article>
