@@ -10,8 +10,7 @@
     <div class="swiper-container art-blog-slider" style="overflow: visible">
            <!-- slider wrapper -->
       <div class="swiper-wrapper">
-          <!-- slide -->
-        <div class="swiper-slide">
+      
 {% for post in posts %}
 
  <article>
@@ -19,7 +18,8 @@
        
 
 
-      
+           <!-- slide -->
+        <div class="swiper-slide">
 
           <!-- blog post card -->
           <div class="art-a art-blog-card">
@@ -44,15 +44,15 @@
           </div>
           <!-- blog post card end -->
 
-       
+        </div>
+        <!-- slide end -->
     
                       
  </article>
           {% endfor %}
        
        
-         </div>
-        <!-- slide end -->
+         
            </div>
       <!-- slider wrapper end -->
     </div>
