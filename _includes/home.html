@@ -1,8 +1,5 @@
 {%- assign posts = paginator.posts | default: site.posts -%}           
 {% for post in posts %}
- <article>
- 
-   
     <!-- container -->
 <div class="container-fluid">
 <div class="row">
@@ -14,6 +11,10 @@
       <!-- slider wrapper -->
       <div class="swiper-wrapper">
 
+
+ <article>
+ 
+   
 
         <!-- slide -->
         <div class="swiper-slide">
@@ -44,25 +45,24 @@
         </div>
         <!-- slide end -->
         
-      </div>
+    
+ 
+
+                      
+ </article>
+          </div>
       <!-- slider wrapper end -->
     </div>
     <!-- slider container end -->
 
   </div>
-  <!-- col end -->
-
-   
+  <!-- col end -->   
 
 </div>
 <!-- row end -->
 
 </div>
 <!-- container end -->
- 
-  <br/>
-                      
- </article>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
