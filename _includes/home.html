@@ -3,7 +3,7 @@
     <!-- container -->
 <div class="container-fluid">
 <div class="row">
- 
+ {% for post in posts %} 
  
  <div class="col-lg-12">
  <!-- slider container -->
@@ -59,13 +59,17 @@
     <!-- slider container end -->
   </div>
   <!-- col end -->   
-
+ {% endfor %}
 </div>
 <!-- row end -->
 
 </div>
 <!-- container end -->
- {% endfor %}
+ 
+
+
+
+
 
 {% if paginator.total_pages > 1 %}
   <footer>
