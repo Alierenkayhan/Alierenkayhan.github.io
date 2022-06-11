@@ -4,17 +4,17 @@
 <div class="container-fluid">
 <div class="row">
  
-<div class="col-lg-12">
+ 
+ <div class="col-lg-12">
 
-    <!-- slider container -->
-    <div class="swiper-container art-blog-slider" style="overflow: visible">
-      <!-- slider wrapper -->
-      <div class="swiper-wrapper">
 {% for post in posts %}
 
  <article>
  
-   
+       <!-- slider container -->
+    <div class="swiper-container art-blog-slider" style="overflow: visible">
+      <!-- slider wrapper -->
+      <div class="swiper-wrapper">
 
         <!-- slide -->
         <div class="swiper-slide">
@@ -45,16 +45,16 @@
         </div>
         <!-- slide end -->
         
-    
+       </div>
+      <!-- slider wrapper end -->
+    </div>
+    <!-- slider container end -->
  
 
                       
  </article>
           {% endfor %}
-          </div>
-      <!-- slider wrapper end -->
-    </div>
-    <!-- slider container end -->
+        
 
   </div>
   <!-- col end -->   
