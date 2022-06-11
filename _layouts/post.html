@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+<article>
 
 <body>
 
@@ -276,12 +276,12 @@ layout: default
                                         <!-- title frame -->
                                         <div class="art-title-frame">
                                             <!-- title -->
-                                            <h4>Project title</h4>
+                                            <h4> {{ title }}   </h4>
                                         </div>
                                         <!-- title frame end -->
                                         <!-- right frame -->
                                         <div class="art-right-frame">
-                                            <div class="art-project-category">Ui Design, Graphic</div>
+                                            <div class="art-project-category"> {{ category }}   </div>
                                         </div>
                                         <!-- right frame end -->
                                     </div>
@@ -295,9 +295,9 @@ layout: default
                                     <!-- project cover -->
                                     <div class="art-a art-project-cover">
                                         <!-- item frame -->
-                                        <a data-fancybox="gallery" href="img/works/original-size/3.jpg" class="art-portfolio-item-frame art-horizontal">
+                                        <a data-fancybox="gallery" href="{{ image }}" class="art-portfolio-item-frame art-horizontal">
                                             <!-- img -->
-                                            <img src="img/works/thumbnail/3.jpg" alt="item">
+                                            <img src="{{ image }}" alt="item">
                                             <!-- zoom icon -->
                                             <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                                         </a>
@@ -329,11 +329,8 @@ layout: default
                                     <div class="art-a art-card art-fluid-card">
                                         <h5 class="mb-15">Description</h5>
                                         <div class="mb-15">
-                                            Perferendis modi tempora, minus facere! Animi ipsam explicabo beatae soluta qui repellat minus perspiciatis placeat
-                                            doloribus praesentium laborum debitis error sed ex nisi, ipsum ad obcaecati assumenda ut recusandae. Vero, voluptate, magni unde accusantium vel ducimus expedita!
-                                        </div>
-                                        <!-- button -->
-                                        <div class="art-buttons-frame"><a href="https://www.behance.net/gallery/83236527/VIE" class="art-link art-color-link art-w-chevron" target="_blank">Read More</a></div>
+                                        {{ content }}                                        
+                                      </div>
                                     </div>
 
                                 </div>
@@ -346,20 +343,16 @@ layout: default
                                         <div class="art-table p-15-15">
                                             <ul>
                                                 <li>
-                                                    <h6>Order Date:</h6><span>24.12.2019</span>
+                                                    <h6>Release Date:</h6><span>24.12.2019</span>
                                                 </li>
                                                 <li>
-                                                    <h6>Final Date:</h6><span>12.03.2020</span>
+                                                    <h6>Update Date:</h6><span>12.03.2020</span>
                                                 </li>
                                                 <li>
                                                     <h6>Status:</h6><span>Completed</span>
                                                 </li>
-                                                <li>
-                                                    <h6>Client:</h6><span>Envato Market</span>
-                                                </li>
-                                                <li>
-                                                    <h6>Location:</h6><span><a href="https://goo.gl/maps/b4w13Zuk9iWCsLMX7" target="_blank">Ukraine, Lviv</a></span>
-                                                </li>
+                                               
+                                               
                                             </ul>
                                         </div>
                                         <!-- table end -->
@@ -402,9 +395,9 @@ layout: default
                                     <!-- grid item -->
                                     <div class="art-grid-item webTemplates">
                                         <!-- grid item frame -->
-                                        <a data-fancybox="gallery" href="img/works/original-size/1.jpg" class="art-a art-portfolio-item-frame art-horizontal">
+                                        <a data-fancybox="gallery" href="{{ resultimage }}" class="art-a art-portfolio-item-frame art-horizontal">
                                             <!-- img -->
-                                            <img src="img/works/thumbnail/1.jpg" alt="item">
+                                            <img src="{{ resultimage }}" alt="item">
                                             <!-- zoom icon -->
                                             <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                                         </a>
@@ -415,9 +408,9 @@ layout: default
                                     <!-- grid item -->
                                     <div class="art-grid-item logos">
                                         <!-- grid item frame -->
-                                        <a data-fancybox="gallery" href="img/works/original-size/2.jpg" class="art-a art-portfolio-item-frame art-vertical">
+                                        <a data-fancybox="gallery" href="{{ resultimage }}" class="art-a art-portfolio-item-frame art-vertical">
                                             <!-- img -->
-                                            <img src="img/works/thumbnail/2.jpg" alt="item">
+                                            <img src="{{ resultimage }}" alt="item">
                                             <!-- zoom icon -->
                                             <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                                         </a>
@@ -428,9 +421,9 @@ layout: default
                                     <!-- grid item -->
                                     <div class="art-grid-item drawings">
                                         <!-- grid item frame -->
-                                        <a data-fancybox="gallery" href="img/works/original-size/3.jpg" class="art-a art-portfolio-item-frame art-horizontal">
+                                        <a data-fancybox="gallery" href="{{ resultimage }}" class="art-a art-portfolio-item-frame art-horizontal">
                                             <!-- img -->
-                                            <img src="img/works/thumbnail/3.jpg" alt="item">
+                                            <img src="{{ resultimage }}" alt="item">
                                             <!-- zoom icon -->
                                             <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                                         </a>
@@ -586,4 +579,6 @@ layout: default
   <script src="js/main.js"></script>
 
 </body>
-
+    <noscript>Please enable JavaScript to view comments.</noscript>
+  {% endif %}
+</article>
