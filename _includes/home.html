@@ -1,9 +1,9 @@
 {%- assign posts = paginator.posts | default: site.posts -%}
+<!-- container -->
+                  <div class="container-fluid">
 {% for post in posts %}
  <article>
  
-<!-- container -->
-                  <div class="container-fluid">
                       <!-- row -->
                       <div class="row">
                           <!-- col -->
@@ -50,11 +50,11 @@
                           </div>
                           <!-- col end -->
                         </div>
-                    </div>
+                  
                       
  </article>
 {% endfor %}
-                       
+         </div>                   
 
 {% if paginator.total_pages > 1 %}
   <footer>
