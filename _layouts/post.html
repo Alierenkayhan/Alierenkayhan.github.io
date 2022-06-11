@@ -4,11 +4,52 @@ layout: default
 
 <article>
   {% include meta.html post=page %}
-  {{ content }}
+
   {% if page.comments != false and site.comments.isso or site.comments.disqus %}
     <hr>
     {% if site.comments.isso_domain %}<div id="isso-thread"></div>{% endif %}
     {% if site.comments.disqus_shortname %}<div id="disqus_thread"></div>{% endif %}
-    <noscript>Please enable JavaScript to view comments.</noscript>
+
+
+
+<!-- slider container -->
+                              <div class="swiper-container art-blog-slider" style="overflow: visible">
+                                  <!-- slider wrapper -->
+                                  <div class="swiper-wrapper">
+                                      <!-- slide -->
+                                      <div class="swiper-slide">
+
+                                          <!-- blog post card -->
+                                          <div class="art-a art-blog-card">
+                                              <!-- post cover -->
+                                              <a href="#." class="art-port-cover">
+                                                  <!-- img -->
+                                                  <img src="img/blog/1.jpg" alt="blog post">
+                                              </a>
+                                              <!-- post cover end -->
+                                              <!-- post description -->
+                                              <div class="art-post-description">
+                                                  <!-- title -->
+                                                  <a href="#.">
+                                                      <h5 class="mb-15">{% include archive.html title="Posts" %}</h5>
+                                                  </a>
+                                                  <!-- text -->
+                                                  <div class="mb-15">{{ content }}</div>
+                                                  <!-- link -->
+                                                  <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+                                              </div>
+                                              <!-- post description end -->
+                                          </div>
+                                          <!-- blog post card end -->
+
+                                      </div>
+                                      <!-- slide end -->
+                                     
+                                  </div>
+                                  <!-- slider wrapper end -->
+                              </div>
+                              <!-- slider container end -->
+  
+      <noscript>Please enable JavaScript to view comments.</noscript>
   {% endif %}
 </article>
