@@ -25,7 +25,9 @@
     <!-- container -->
 <div class="container-fluid">
 <div class="row">
-
+ {% for post in posts %} 
+   <article> 
+ 
  
  <div class="col-lg-12">
  
@@ -38,9 +40,7 @@
  
 
  
-  {% for post in posts %} 
-   <article> 
- 
+  
            <!-- slide -->
         <div class="swiper-slide">
       
@@ -72,8 +72,7 @@
  
         </article>
                    <div style="margin-left:20px;">
-            </div>
-    {% endfor %}  
+   
       
    
  
@@ -90,7 +89,8 @@
  
   </div>
   <!-- col end -->   
- 
+           </div>
+    {% endfor %}  
 </div>
 <!-- row end -->
 
