@@ -8,21 +8,21 @@
  
    <!-- container -->
                         <div class="container-fluid">
-
+                {% for post in posts %} 
+   <article>              
                             <!-- row -->
                             <div class="row p-30-0">
 
-                {% for post in posts %} 
-   <article>                     
+        
                                 <!-- col -->
                                 <div class="col-lg-4">
       
                                     <!-- blog post card -->
-                                    <div class="art-a art-blog-card" style="height:400px;width:500px;">
+                                    <div class="art-a art-blog-card" style="height:400px;width:400px;">
                                         <!-- post cover -->
                                        
                                             <!-- img -->
-                                             <img src="img/bloggif.gif" alt="blog post" style="height:200px;width:500px;">
+                                             <img src="img/bloggif.gif" alt="blog post" style="height:300px;width:400px;">
                                      
                                         <!-- post cover end -->
                                         <!-- post description -->
@@ -41,12 +41,12 @@
                                 <!-- col end -->
                               
                              
-                     </article>
+    
+                            </div>
+                       </article>
         <div style="margin-left:20px;">
      </div>
- {% endfor %}   
-                            </div>
-                            <!-- row end -->
+ {% endfor %}                          <!-- row end -->
 
                         </div>
                         <!-- container end -->
