@@ -23,80 +23,63 @@
 
          
  
-    <!-- container -->
+  <!-- container -->
 <div class="container-fluid">
-<div class="row">
- 
- 
- 
- <div class="col-lg-12">
- 
- <!-- slider container -->
-    <div class="swiper-container art-blog-slider" style="overflow: visible">
- 
-           <!-- slider wrapper -->
-      <div class="swiper-wrapper">
-       
- 
 
- 
-       {% for post in posts %} 
-   <article>  
-           <!-- slide -->
-        <div class="swiper-slide">
-         
-          <!-- blog post card -->
-          <div class="art-a art-blog-card" style="hegiht:50px;width:400px;">
-              
-             <!-- post cover -->
-            <a href="#." class="art-port-cover">
-              <!-- img -->
-              <img src="img/blog/1.jpg" alt="blog post">
-            </a>
-            <!-- post cover end -->
-              
-              
-            <!-- post description -->
-            <div class="art-post-description">
-              <!-- title -->
-              <a href="#.">
-                <p class="mb-15">{% include meta.html post=post preview=true %}</p>
-              </a>
-              <!-- text -->
-             <!--   <div class="mb-15">{{ post.excerpt }} </div>-->
-              <!-- link -->
-             </div>
-            <!-- post description end -->
-          </div>
-          <!-- blog post card end -->
- 
-          
-        </div>
-        <!-- slide end -->
-                    </article>
-           <div style="margin-left:20px;">
-        </div>
-    {% endfor %}     
-                    
-   
-      
-   
- 
-          
-       
-   
-         
-           </div>
-      <!-- slider wrapper end -->
-       
-     
-    </div>
-    <!-- slider container end -->
- 
-  </div>
-  <!-- col end -->   
+  <!-- row -->
+  <div class="row">
+
     
-      <!-- col -->
+    <!-- col -->
+    <div class="col-lg-12">
+
+      <!-- slider container -->
+      <div class="swiper-container art-blog-slider" style="overflow: visible">
+        <!-- slider wrapper -->
+        <div class="swiper-wrapper">
+
+          {% for post in posts %} 
+   <article> 
+          <!-- slide -->
+          <div class="swiper-slide">
+
+            <!-- blog post card -->
+            <div class="art-a art-blog-card"  style="height:50px;width:400px;">
+              <!-- post cover -->
+              <span class="art-port-cover">
+                <!-- img -->
+                <img src="img/blog/1.jpg" alt="blog post">
+              </span>
+              <!-- post cover end -->
+              <!-- post description -->
+              <div class="art-post-description">
+                <!-- title -->
+                <a href="#.">
+                  <p class="mb-15">{% include meta.html post=post preview=true %}</p>
+                </a>
+                <!-- text -->
+               <!-- <div class="mb-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet!</div>-->
+              </div>
+              <!-- post description end -->
+            </div>
+            <!-- blog post card end -->
+
+          </div>
+          <!-- slide end -->
+        
+        </article>
+        <div style="margin-left:20px;">
+     </div>
+ {% endfor %}     
+        </div>
+        <!-- slider wrapper end -->
+      </div>
+      <!-- slider container end -->
+
+    </div>
+    <!-- col end -->
+
+    <!-- col -->
     <div class="col-lg-12">
 
       <!-- slider navigation -->
@@ -132,15 +115,12 @@
     </div>
     <!-- col end -->
 
-
-
-     
-</div>
-<!-- row end -->
+  </div>
+  <!-- row end -->
 
 </div>
 <!-- container end -->
- 
+
 
 
 
