@@ -46,6 +46,34 @@
 
         </div>
         <!-- slide end -->
+    
+       <!-- slide -->
+        <div class="swiper-slide">
+ 
+          <!-- blog post card -->
+          <div class="art-a art-blog-card">
+            <!-- post cover -->
+            <a href="#." class="art-port-cover">
+              <!-- img -->
+              <img src="img/blog/1.jpg" alt="blog post">
+            </a>
+            <!-- post cover end -->
+            <!-- post description -->
+            <div class="art-post-description">
+              <!-- title -->
+              <a href="#.">
+                <p class="mb-15">{% include meta.html post=post preview=true %}</p>
+              </a>
+              <!-- text -->
+              <div class="mb-15">{{ post.excerpt }} </div>
+              <!-- link -->
+             </div>
+            <!-- post description end -->
+          </div>
+          <!-- blog post card end -->
+
+        </div>
+        <!-- slide end -->
         </article>
     {% endfor %}
                       
