@@ -32,11 +32,11 @@
  
  <!-- slider container -->
     <div class="swiper-container art-blog-slider" style="overflow: visible">
-       {% for post in posts %} 
-   <article>  
+ 
            <!-- slider wrapper -->
       <div class="swiper-wrapper">
-      
+             {% for post in posts %} 
+   <article>  
  
 
  
@@ -78,12 +78,12 @@
  
           
        
-       
+            </article>
+    {% endfor %}  
          
            </div>
       <!-- slider wrapper end -->
-           </article>
-    {% endfor %}  
+       
      
     </div>
     <!-- slider container end -->
