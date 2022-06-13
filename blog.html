@@ -1,6 +1,6 @@
 ---
-layout: page
-title: "Blog"
+layout: default
+title: "Home"
 ---
 
 <!doctype html>
@@ -335,7 +335,11 @@ title: "Blog"
                           <!-- col -->
                           <div class="col-lg-12">
                                  
-                             this
+                             {% if site.show_excerpts %}
+                            {% include home.html %}
+                            {% else %}
+                            {% include archive.html title="Posts" %}
+                            {% endif %}
                                  
                                  
                               
