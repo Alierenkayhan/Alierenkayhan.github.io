@@ -2,14 +2,6 @@
 title:  "Horizon report"
 mathjax: true
 layout: post
-categories: 
- -Alla Anohina's Article
- -Analysis Of The Terminology Used In The Field Of Virtual Learning 
- -Computer-Based Learning 
- -Dıstance Learnıng 
- -E-Learnıng 
- -Onlıne Learnıng 
- -Web-Based Learnıng
 
 ---
 
