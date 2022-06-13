@@ -1,5 +1,5 @@
 ---
-title:  "Terminology"
+title:  "Horizon report"
 mathjax: true
 layout: post
 categories: 
