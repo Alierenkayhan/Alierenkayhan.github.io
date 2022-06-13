@@ -13,5 +13,5 @@ categories:
 
 ---
 
- <iframe src ="https://alierenkayhanbouncet.blogspot.com/2020/10/terminology.html" width="160%" height="600"> </iframe>
+ <iframe src ="https://alierenkayhanbouncet.blogspot.com/2020/10/terminology.html" width="152%" height="500"> </iframe>
 
