@@ -283,7 +283,7 @@ title: "Home"
                   <i class="fab fa-unity fa-2x"></i>
               </a>
                <a href="https://www.ted.com/profiles/34139055" target="_blank" title="TED">
-                   <img id="my-img" src="img/icon/ted-logo.ico" onmouseover="hover(this);" onmouseout="unhover(this);" alt="TED" height="15px"/>
+                   <img src="img/icon/ted-logo.ico" onmouseover="hover(this);" onmouseout="unhover(this);" alt="TED" height="15px"/>
                </a>
                 
             </div>
@@ -913,12 +913,11 @@ title: "Home"
     
     <script>
         functionhover(element) {
-  element.setAttribute('src', 'img/ted-logo-hover.ico');
-}
-functionunhover(element) {
-  element.setAttribute('src', 'img/icon/ted-logo.ico');
-}
-
+            element.setAttribute('src', 'img/ted-logo-hover.ico');
+        }
+        functionunhover(element) {
+            element.setAttribute('src', 'img/icon/ted-logo.ico');
+        }
     </script>
    
  </body>
