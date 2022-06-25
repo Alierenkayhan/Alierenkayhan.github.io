@@ -1,36 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
-<meta charset="{{ site.encoding }}">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="{{ page.author | default: site.author | escape }}">
-<meta name="generator" content="Jekyll v{{ jekyll.version }}">
- <!-- favicon  -->
- <link rel="shortcut icon" href="https://github.com/Alierenkayhan/Alierenkayhan.github.io/blob/master/img/thumbnail.ico" type="image/x-icon">
- 
-   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- color of address bar in mobile browser -->
-    <meta name="theme-color" content="#2B2B35">
-    <!-- favicon  -->
-    <link rel="shortcut icon" href="img/thumbnail.ico" type="image/x-icon">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
-    <!-- fancybox css -->
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://kit.fontawesome.com/50e2bacc47.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+---
+layout: default
+---
 
  <article>
   <header><h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1></header>
   {{ content }}
 </article>
-</html>
+
