@@ -33,17 +33,18 @@ title: "Home"
     <title>Ali Eren Kayhan</title>
 </head>
 
-<style>
-    a img:last-child {
-      display: none;  
-    }
-    a:hover img:last-child {
-      display: block;  
-    }
-    a:hover img:first-child {
-      display: none;  
-    }
+    <style>
+          #onhover {
+              display: none;
+            }
+            #surround:hover span[id="initial"] {
+              display: none;
+            }
+            #surround:hover span[id="onhover"] {
+              display: block;
+            }
     </style>
+
     
 <body>
   <!-- app -->
@@ -294,8 +295,10 @@ title: "Home"
                   <i class="fab fa-unity fa-2x"></i>
               </a>
                <a href="https://www.ted.com/profiles/34139055" target="_blank" title="TED">              
-                       <img src="img/icon/ted-logo.ico"   alt="TED" height="15px" /> 
-                       <img src="img/ted-logo-hover.ico"   alt="TED" height="15px" />
+                         <span id="surround">
+                            <span id="initial"><img id="tedicon" src="img/icon/ted-logo.ico" alt="TED" height="15px"/></span>
+                            <span id="onhover"> <img id="tedicon" src="img/ted-logo-hover.ico" alt="TED" height="15px"/></span>
+                        </span>
                </a>
                 
             </div>
