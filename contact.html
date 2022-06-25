@@ -28,15 +28,16 @@
 </head>
 
     <style>
-    .ted:last-child {
-      display: none;  
-    }
-    .ted:hover ted:last-child {
-      display: block;  
-    }
-    .ted:hover ted:first-child {
-      display: none;  
-    }
+        #ted {
+            width:0px;
+            height:0px;
+            background:url('img/icon/ted-logo.ico');
+            padding:50px;
+        }
+
+        #ted:hover {
+            background: url('img/ted-logo-hover.ico');
+        }
     </style>
 
     
@@ -274,12 +275,11 @@
                         </a>
                         <!-- social link -->
                          <a href="https://learn.unity.com/u/alierenkayhan?tab=profile" target="_blank" title="Unity page">
-                  <i class="fab fa-unity fa-2x"></i>
+                              <i class="fab fa-unity fa-2x"></i>
                         </a>
-                                <a href="https://www.ted.com/profiles/34139055" target="_blank" title="TED">              
-                       <img class="ted" src="img/icon/ted-logo.ico"   alt="TED" height="15px" /> 
-                       <img  class="ted" src="img/ted-logo-hover.ico"   alt="TED" height="15px" />
-               </a>
+                          <a href="https://www.ted.com/profiles/34139055" target="_blank" title="TED">              
+                              <img id="ted" src="img/icon/ted-logo.ico"/>
+                          </a>
 
                     </div>
                     <!-- sidebar social end -->
