@@ -28,15 +28,16 @@
 </head>
 
     <style>
-        #tedicon {
-            height:15px;
-            background:url(https://github.com/Alierenkayhan/Alierenkayhan.github.io/blob/master/img/icon/ted-logo.ico);
-        }
+            #tedicon:last-child{
+                display: none;  
+             }
 
-        #tedicon:hover {
-            height:15px;
-            background: url(https://github.com/Alierenkayhan/Alierenkayhan.github.io/blob/master/img/ted-logo-hover.ico);
-        }
+            #tedicon:hover {
+                display: block;  
+             }
+            #tedicon:first-child {
+                display: none;   
+             }
     </style>
 
     
@@ -277,7 +278,9 @@
                               <i class="fab fa-unity fa-2x"></i>
                         </a>
                           <a href="https://www.ted.com/profiles/34139055" target="_blank" title="TED">              
-                              <img id="tedicon" src="img/icon/ted-logo.ico" alt="TED"/>
+                              <img id="tedicon" src="img/icon/ted-logo.ico" alt="TED" height="15px"/>
+                              <img id="tedicon" src="img/ted-logo-hover.ico" alt="TED" height="15px"/>
+
                           </a>
 
                     </div>
