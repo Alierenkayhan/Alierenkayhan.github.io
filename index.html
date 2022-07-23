@@ -307,6 +307,9 @@ title: "Home"
                             <span id="onhover"> <img id="tedicon" src="img/ted-logo-hover.ico" alt="TED" height="15px"/></span>
                         </span>
                </a>
+                 
+                 <i class="fa-solid fa-circle-plus fa-2x" onclick="executeExample('customHtml')"></i>
+              
    
             </div>
             <!-- sidebar social end -->
@@ -974,7 +977,10 @@ title: "Home"
   <!-- main js -->
   <script src="js/main.js"></script>
     
-  
+    
+    
+  <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
       
     <script>
       (function(d,t) {
@@ -991,6 +997,47 @@ title: "Home"
           })
         }
       })(document,"script");
+        
+        
+        Swal.fire({
+  title: '<strong><u>My Accounts</u></strong>',
+  icon: 'info',
+  html:
+    <table border= "0">
+  <tr>
+    <td><img align="center" src="images/media logo/linkedin.png"  height="40" width="40" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/ali-eren-kayhan/">Ali Eren Kayhan</a></td>
+    <td><img align="center" src="images/media logo/instagram.png"  height="40" width="40" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/kayhanalieren/">kayhanalieren</a></td>
+    <td><img align="center" src="images/media logo/facebook.png"  height="40" width="40" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/alieren.kayhan.5/">Ali Eren Kayhan</a></td>
+  </tr>
+  <tr>
+    <td><img align="center" src="images/media logo/Itch.io_logo.png"  height="40" width="100" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://alierenkayhan.itch.io/">Alierenkayhan</a></td>
+    <td><img align="center" src="images/media logo/outlook.png"  height="40" width="40" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:ali_erenbatman@hotmail.com">ali_erenbatman@hotmail.com</a></td>
+     <td><img align="center" src="images/media logo/blogger-logo.png"  height="40" width="40" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://alierenkayhanbouncet.blogspot.com/">alierenkayhanbouncet</a></td>
+  </tr>
+  <tr>
+    <td><img align="center" src="images/logom.png"  height="40" width="40" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://alierenkayhan.github.io/">alierenkayhan.github.io</a></td>
+    <td><img align="center" src="images/media logo/ted-logo.png"  height="40" width="40" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.ted.com/profiles/34139055">Ali Eren Kayhan</a></td>
+    <td><img align="center" src="images/media logo/unitylearn.png"  height="40" width="70" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://learn.unity.com/u/alierenkayhan?tab=profile">Ali Eren Kayhan</a></td>
+  </tr>
+    <tr>
+    <td><img align="center" src="images/media logo/YouTube logo.png"  height="30" width="70" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCI8HFmI21vBN65Kc3x6L_4A">Ali Eren Kayhan</a></td>
+      <td><img align="center" src="images/media logo/hackerranklogo.png"  height="50" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.hackerrank.com/alieren?hr_r=1">Ali Eren Kayhan</a></td>
+        <td><img align="center" src="images/media logo/patikadev.png"  height="50" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://app.patika.dev/alierenkayhan">Ali Eren Kayhan</a></td>
+  </tr>
+   <tr>
+    <td><img align="center" src="images/media logo/Medium logo.png"  height="30" width="90" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://medium.com/@alierenkayhan">@alierenkayhan</a></td>
+  </tr>
+</table>
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up"></i> Great!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down"></i>',
+  cancelButtonAriaLabel: 'Thumbs down'
+})
     </script>
       
  
