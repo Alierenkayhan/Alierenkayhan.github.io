@@ -303,7 +303,7 @@ title: "Home"
                             <span id="onhover"> <img id="tedicon" src="img/ted-logo-hover.ico" alt="TED" height="15px"/></span>
                         </span>
                </a>
-                 <button onclick="executeExample('customHtml')">
+                 <button id="button-a" style="background-color:none;">
                  <i class="fa-solid fa-circle-plus fa-2x"></i>
               </button>
    
@@ -994,7 +994,7 @@ title: "Home"
         }
       })(document,"script");
         
-        
+        $('#button-a').click(function()){
         Swal.fire({
   title: '<strong><u>My Accounts</u></strong>',
   icon: 'info',
@@ -1012,6 +1012,7 @@ title: "Home"
     '<i class="fa fa-thumbs-down"></i>',
   cancelButtonAriaLabel: 'Thumbs down'
 })
+        });
     </script>
       
  
