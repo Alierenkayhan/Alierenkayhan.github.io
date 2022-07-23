@@ -303,9 +303,9 @@ title: "Home"
                             <span id="onhover"> <img id="tedicon" src="img/ted-logo-hover.ico" alt="TED" height="15px"/></span>
                         </span>
                </a>
-                 <button id="button-a" style="background-color:none;">
-                 <i class="fa-solid fa-circle-plus fa-2x"></i>
-              </button>
+              
+                 <a data-fancybox="recommendation" href="#art-recomendation-popup-1" class="art-link art-color-link art-w-chevron"><i class="fa-solid fa-circle-plus fa-2x"></i></a>
+        
    
             </div>
             <!-- sidebar social end -->
@@ -316,6 +316,47 @@ title: "Home"
         </div>
         <!-- info bar end -->
 
+            <!-- popup -->
+                        <div class="art-recomendation-popup" style="display: none;" id="art-recomendation-popup-1">
+
+                          <!-- testimonial -->
+                          <div class="art-a art-testimonial">
+                            <!-- testimonial body -->
+                            <div class="testimonial-body">
+                              <!-- photo -->
+                              <img class="art-testimonial-face" src="img/testimonials/face-3.jpg" alt="face">
+                              <!-- name -->
+                              <h5>Paul Trueman</h5>
+                              <div class="art-el-suptitle mb-15">Template author</div>
+                              <!-- text -->
+                              <div class="mb-15">Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur!
+                                This is easily a 5 star freelancer.</div>
+                            </div>
+                            <!-- testimonial body end -->
+                            <!-- testimonial footer -->
+                            <div class="art-testimonial-footer">
+                              <div class="art-left-side">
+                                <!-- star rate -->
+                                <ul class="art-star-rate">
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                  <li><i class="fas fa-star"></i></li>
+                                </ul>
+                                <!-- star rate end -->
+                              </div>
+                              <div class="art-right-side">
+
+                              </div>
+                            </div>
+                            <!-- testimonial footer end -->
+                          </div>
+                          <!-- testimonial end -->
+
+                        </div>
+                        <!-- popup end --> 
+            
         <!-- content -->
         <div class="art-content">
 
@@ -975,8 +1016,7 @@ title: "Home"
     
     
     
-  <script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
+ 
       
     <script>
       (function(d,t) {
@@ -993,26 +1033,7 @@ title: "Home"
           })
         }
       })(document,"script");
-        
-        $('#button-a').click(function()){
-        Swal.fire({
-  title: '<strong><u>My Accounts</u></strong>',
-  icon: 'info',
-  html:
-   'You can use <b>bold text</b>, ' +
-    '<a href="//sweetalert2.github.io">links</a> ' +
-    'and other HTML tags',
-  showCloseButton: true,
-  showCancelButton: true,
-  focusConfirm: false,
-  confirmButtonText:
-    '<i class="fa fa-thumbs-up"></i> Great!',
-  confirmButtonAriaLabel: 'Thumbs up, great!',
-  cancelButtonText:
-    '<i class="fa fa-thumbs-down"></i>',
-  cancelButtonAriaLabel: 'Thumbs down'
-})
-        });
+ 
     </script>
       
  
