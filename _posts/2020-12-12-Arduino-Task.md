@@ -1,5 +1,5 @@
 ---
-title:  "Ardunio Task"
+title:  "Arduino Task"
 mathjax: true
 layout: post
 
