@@ -1,5 +1,5 @@
 ---
-title:  "Neden Bilgisayar Eğitimi ve Eğitim Teknolojileri bölümünde okumalısınız"
+title:  "Neden Bilgisayar Egitimi ve Egitim Teknolojileri bolumunde okumalısınız"
 mathjax: true
 layout: post
 
