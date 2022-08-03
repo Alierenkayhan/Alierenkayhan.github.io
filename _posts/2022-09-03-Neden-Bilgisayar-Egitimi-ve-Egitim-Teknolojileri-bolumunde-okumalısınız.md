@@ -4,5 +4,5 @@ mathjax: true
 layout: post
 
 ---
+<a href="https://medium.com/p/1ee1c3ce0bf7"> Link </a>
 
- <iframe src ="https://medium.com/p/1ee1c3ce0bf7" width="100%" height="550"></iframe>
