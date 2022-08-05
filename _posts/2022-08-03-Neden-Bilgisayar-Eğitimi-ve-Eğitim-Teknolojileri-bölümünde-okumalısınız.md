@@ -5,4 +5,4 @@ layout: post
 
 ---
 
-<p>Published by Not Tutuyoruz on Medium. You can read the article by clicking <a href="https://medium.com/nottutuyoruz/neden-bilgisayar-egitimi-ve-egitim-teknolojileri-bolumunde-okumalisiniz-1ee1c3ce0bf7">this</a></p>
+<p style="font-size:20px">Published by Not Tutuyoruz on Medium. You can read the article by clicking <a href="https://medium.com/nottutuyoruz/neden-bilgisayar-egitimi-ve-egitim-teknolojileri-bolumunde-okumalisiniz-1ee1c3ce0bf7" style="color:white">this</a></p>
