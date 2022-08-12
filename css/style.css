@@ -2512,7 +2512,6 @@ portfolio
 
 .art-recomendation-popup {
   background-color: transparent;
-  max-width: 50%;
 }
 
 /* ------------------------------
@@ -2544,7 +2543,7 @@ content (after 1400px)
     font-size: 36px;
   }
   .art-banner .art-banner-overlay .art-banner-photo {
-    width: 360px;
+    width: 320px;
   }
 }
 /* ------------------------------
